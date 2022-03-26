@@ -35,6 +35,49 @@ bash -c "$(wget -qO - https://swift-toolchain.com/install.sh)"
 bash -c "$(wget2 -qO - https://swift-toolchain.com/install.sh)"
 ```
 
+## How to debugging within VSCode
+
+Install extension: [CodeLLDB](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb)
+
+- lldb.library: `/opt/swift-toolchain/lib/liblldb.so`
+
+Install extension: [Swift](https://marketplace.visualstudio.com/items?itemName=sswg.swift-lang)
+
+Configurate Workspace:
+
+launch.json:
+
+```json
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/.build/debug/Run",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "swift: Build Debug Run"
+    }
+  ]
+}
+```
+
+tasks.json
+
+```json
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "swift: Build Debug Run",
+      "type": "shell",
+      "command": "swift build -c debug"
+    }
+  ]
+}
+```
+
 ## How to use Swift-DocC
 
 Require Swift `5.6`.
