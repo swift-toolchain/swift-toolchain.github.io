@@ -12,6 +12,8 @@ Ubuntu: `20.04 (focal)`, `18.04 (bionic)`
 
 ## Automatic installation script
 
+`swift-toolchain` will be installed at: `/opt/swift-toolchain`
+
 Install dependencies:
 
 ```bash
@@ -179,8 +181,6 @@ Visit: `http://10.211.55.32:8080/tutorials/slothcreator`
 More Information: [Distributing Documentation to Other Developers](https://www.swift.org/documentation/docc/distributing-documentation-to-other-developers#Host-a-Documentation-Archive-on-Your-Website)
 
 ## How to Install
-
-swift-toolchain is installed at: `/opt/swift-toolchain`
 
 ```bash
 sudo apt-get update
