@@ -45,40 +45,11 @@ Install extension: [CodeLLDB](https://marketplace.visualstudio.com/items?itemNam
 
 Install extension: [Swift](https://marketplace.visualstudio.com/items?itemName=sswg.swift-lang)
 
-Configurate Workspace:
+Configurate Swift Extension:
 
-launch.json:
-
-```json
-{
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "type": "lldb",
-      "request": "launch",
-      "program": "${workspaceFolder}/.build/debug/Run",
-      "args": [],
-      "cwd": "${workspaceFolder}",
-      "preLaunchTask": "swift: Build Debug Run"
-    }
-  ]
-}
-```
-
-tasks.json
-
-```json
-{
-  "version": "2.0.0",
-  "tasks": [
-    {
-      "label": "swift: Build Debug Run",
-      "type": "shell",
-      "command": "swift build -c debug"
-    }
-  ]
-}
-```
+- swift.path (requried): `/opt/swift-toolchain/usr/bin`
+- sourcekit-lsp.serverPath (optional): `/opt/swift-toolchain/usr/bin/sourcekit-lsp`
+- sourcekit-lsp.toolchainPath (optional): `/opt/swift-toolchain/usr`
 
 ## How to use Swift-DocC
 
