@@ -10,7 +10,7 @@ fi
 distributor=$(lsb_release -is)
 codename=$(lsb_release -cs)
 
-supported_codenames=("bullseye" "buster" "focal" "bionic")
+supported_codenames=("bullseye" "buster" "jammy" "focal" "bionic")
 matched_codename=
 for c in ${supported_codenames[@]}
 do

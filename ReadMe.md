@@ -8,7 +8,7 @@ archs: `aarch64`, `amd64`
 
 Debian: `11 (bullseye)`, `10 (buster)`
 
-Ubuntu: `22.04 (jammy)` in progress, `20.04 (focal)`, `18.04 (bionic)`
+Ubuntu: `22.04 (jammy)`, `20.04 (focal)`, `18.04 (bionic)`
 
 ## Automatic installation script
 
