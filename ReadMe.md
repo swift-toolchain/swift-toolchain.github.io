@@ -41,7 +41,7 @@ bash -c "$(wget2 -qO - https://swift-toolchain.com/install.sh)"
 
 Install extension: [CodeLLDB](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb)
 
-- lldb.library: `/opt/swift-toolchain/lib/liblldb.so`
+- lldb.library: `/opt/swift-toolchain/usr/lib/liblldb.so`
 
 Install extension: [Swift](https://marketplace.visualstudio.com/items?itemName=sswg.swift-lang)
 
