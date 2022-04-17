@@ -2,7 +2,7 @@
 
 [Swift](https://swift.org) toolchain for Debian / Ubuntu.
 
-version: `5.6`
+version: `5.6.1`
 
 archs: `aarch64`, `amd64`
 
