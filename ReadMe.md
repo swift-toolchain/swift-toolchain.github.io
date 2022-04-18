@@ -1,6 +1,6 @@
 # Swift toolchain
 
-[Swift](https://swift.org) toolchain for Debian / Ubuntu.
+[Swift](https://swift.org) toolchain for Debian-based Linux distros.
 
 version: `5.6.1`
 
