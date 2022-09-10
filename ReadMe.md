@@ -166,12 +166,6 @@ If you don't want to install recommends: `git`, `pkg-config`, `tzdata`, `gnupg2`
 sudo apt-get --no-install-recommends install swift-toolchain
 ```
 
-If you want to install old version: `5.5.3`:
-
-```bash
-sudo apt-get install swift-toolchain=5.5.3-1
-```
-
 ## How to upgrade to latest version
 
 Update swift-toolchain to latest version:
