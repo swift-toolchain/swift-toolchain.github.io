@@ -2,7 +2,7 @@
 
 [Swift](https://swift.org) toolchain for Debian-based Linux distros.
 
-version: `5.6.3`
+version: `5.7`
 
 archs: `aarch64`, `amd64`
 
